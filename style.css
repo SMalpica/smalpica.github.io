@@ -20,6 +20,8 @@ body{
 
 .navbar-title{
     color: rgb(33,37,41) !important;
+    font-size: 1.5rem;
+    color: white !important;
 }
 .nav-link{
     color: white !important;
@@ -35,6 +37,10 @@ body{
     border-radius: 50%;
     margin: auto;
     display: block;
+}
+
+.img-social{
+    width: 2vw;
 }
 
 description-text{
