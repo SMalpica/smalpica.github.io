@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200;300&family=Roboto&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
+    margin:0;
+
+    background-image: url(img/photo_2021-05-28_12-12-07.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+:is(h1, h2, h3, h4, h5, h6), .navbar-title{
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-title{
+    color: rgb(33,37,41) !important;
+}
+.nav-link{
+    color: white !important;
+    font-weight: bold;
+}
+
+.img-graphic-top{
+    width: 40vw;
+}
+
+.img-profile{
+    width: 50vw;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+description-text{
+    display: block;
+}
+
+section.text-section{
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.img-publication{
+    width: 100%;
+}
+
+.img-work-experience{
+    width: 30%;
+}
+
+a{
+    color: rgb(13,77,95) !important;
+}
+
+a:hover{
+    color: rgb(25, 138, 173) !important;
+}
+
+
+footer {
+    height: auto;
+    background-color: rgb(13,77,95);
+    color: white;
+}
+
+
+@media only screen and (min-width: 850px) {
+    .img-graphic-top{
+        width: 10vw;
+    }
+
+    .img-profile{
+        width: 10vw;
+        border-radius: 50%;
+    }
+
+    section.text-section{
+        margin: 3rem !important;
+    }
+
+    .img-work-experience{
+        width: 100%;
+    }
+
+}
+
+
+
+
