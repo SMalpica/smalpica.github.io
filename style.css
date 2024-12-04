@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@200;300&family=Roboto&display=swap');
 
-body{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-
-    margin:0;
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+	
+	margin:0;
 
     background-image: url(img/photo_2021-05-28_12-12-07.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+	
+	padding-top: 70px; /* For navbar */
 }
+h1, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
 
 :is(h1, h2, h3, h4, h5, h6), .navbar-title{
 
@@ -27,6 +34,16 @@ body{
     color: white !important;
     font-weight: bold;
 }
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.nav-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
 
 .img-graphic-top{
     width: 40vw;
@@ -61,20 +78,40 @@ section.text-section{
     width: 30%;
 }
 
-a{
-    color: rgb(13,77,95) !important;
+
+a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-a:hover{
-    color: rgb(25, 138, 173) !important;
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
 
-
-footer {
-    height: auto;
+button {
     background-color: rgb(13,77,95);
     color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: rgb(13,77,95);
+}
+
+footer {
+    background-color: rgb(13,77,95);
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: white;
+}
+footer h6 {
+    margin: 0;
+}
+
 
 
 @media only screen and (min-width: 850px) {
@@ -97,6 +134,97 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+    .col-lg-3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+#about-me-section {
+    background: linear-gradient(to right, #f9f9f9, #fff);
+    padding: 40px;
+    border-radius: 8px;
+	margin-top: 30px; /* Additional separation below the navbar */
+    padding-top: 20px; /* Optional for internal spacing */
+}
+
+.img-publication {
+    width:  20vw; /* Take up the full width of the column */
+    height: auto; /* Maintain aspect ratio */
+	display: block; /* Ensure proper alignment in the column */
+	margin: 0 auto; /* Center the image horizontally if needed */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+}
+.img-profile {
+    width:  100%; /* Take up the full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+}
+.description-text {
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
 
 
+#publications-section {
+    padding: 40px 20px;
+}
 
+#publications-section h2 {
+    margin-top: 40px; /* Add space between years */
+    font-size: 1.8rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.img-publication {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#publications-section .row {
+    margin-bottom: 30px;
+	align-items: flex-start;
+}
+
+.img-publication {
+    max-width: 100%;
+    height: auto;
+	display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.col-lg-3 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.col-lg-9 h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.col-lg-9 p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#publications-section .col-lg-2 {
+    padding-left: 0; /* Remove unnecessary padding on the left */
+    margin-left: 0; /* Ensure no margin on the left */
+}
+
+.highlighted-item {
+    background-color: #f9f9f9; /* Color de fondo destacado */
+    border: 2px solid rgb(13,77,95); /* Borde distintivo */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
