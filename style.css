@@ -228,3 +228,9 @@ footer h6 {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
+
+.equal-img {
+    height: 260px;        /* ajusta este valor a tu gusto */
+    width: 100%;
+    object-fit: cover;
+}
